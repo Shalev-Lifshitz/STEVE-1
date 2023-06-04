@@ -1,4 +1,5 @@
 import torch
+import cv2
 
 MINECLIP_CONFIG = {
     'arch': "vit_base_p16_fz.v2.t2",
@@ -21,3 +22,5 @@ PRIOR_INFO = {
     'hidden_dim': 512,
     'model_path': 'data/weights/steve1/steve1_prior.pt',
 }
+
+FONT = cv2.FONT_HERSHEY_SIMPLEX

@@ -5,10 +5,10 @@ import os
 import cv2
 import numpy as np
 import torch
-from t2b.data.text_alignment.vae import load_vae_model
-from t2b.utils.mineclip_agent_env_utils import load_mineclip_agent_env
-from t2b.utils.text_overlay_utils import created_fitted_text_image
-from t2b.utils.video_utils import save_frames_as_video
+from steve1.data.text_alignment.vae import load_vae_model
+from steve1.utils.mineclip_agent_env_utils import load_mineclip_agent_env
+from steve1.utils.text_overlay_utils import created_fitted_text_image
+from steve1.utils.video_utils import save_frames_as_video
 
 from steve1.config import PRIOR_INFO, DEVICE
 from steve1.utils.embed_utils import get_prior_embed

@@ -39,7 +39,7 @@ We recommend running on linux using a conda environment, with python 3.10.
 1. Install PyTorch 2.0: `conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvidia`
 2. Install MineDojo and MineCLIP: `pip install minedojo git+https://github.com/MineDojo/MineCLIP`
    - See [MineDojo Installation](https://docs.minedojo.org/sections/getting_started/install.html) for more details such as setting the correct Java version
-3. Install MineRL: `pip install git+https://github.com/minerllabs/minerl@v1.0.0`
+3. Install MineRL: `pip install git+https://github.com/minerllabs/minerl@v1.0.1`
    - See [MineRL Installation](https://minerl.readthedocs.io/en/latest/tutorials/index.html) for more details on how to setup MineRL
 4. Install VPT requirements: `pip install gym==0.19 gym3 attrs opencv-python`
 5. Install additional requirements: `pip install gdown tqdm accelerate==0.18.0 wandb`

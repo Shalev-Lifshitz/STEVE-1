@@ -5,7 +5,7 @@ from steve1.config import FONT
 
 
 def created_fitted_text_image(desired_width, text, thickness=2,
-                              background_color=(255, 255, 255), text_color=(0, 0, 0), height_padding=20, cv2=None):
+                              background_color=(255, 255, 255), text_color=(0, 0, 0), height_padding=20):
     """Create an image with text fitted to the desired width."""
     font_scale = 0.1
     text_size, _ = cv2.getTextSize(text, FONT, font_scale, thickness)

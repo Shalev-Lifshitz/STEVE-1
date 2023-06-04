@@ -1,4 +1,5 @@
 import numpy as np
+import cv2
 
 from steve1.config import FONT
 

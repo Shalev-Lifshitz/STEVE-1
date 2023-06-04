@@ -23,4 +23,4 @@ gdown https://drive.google.com/uc?id=18JKzIwHmFBrAjfiRNobtwkN7zhwQc7IO -O data/p
 
 # Download visual prompt embeds
 gdown https://drive.google.com/uc?id=1K--DOHMDKjtklTK6SbpH11wrI2j_61mu -O data/visual_prompt_embeds.zip
-unzip data/visual_prompt_embeds.zip -d data/visual_prompt_embeds
+unzip data/visual_prompt_embeds.zip -d data

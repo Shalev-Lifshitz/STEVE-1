@@ -76,6 +76,7 @@ We provided two scripts for testing out the agent with different prompts. To tes
 
 1. Run: `. run_agent/1_gen_paper_videos.sh` to generate the videos used in the paper.
 2. Run: `. run_agent/2_gen_vid_for_text_prompt.sh` to generate videos for arbitrary text prompts.
+3. Run: `. run_agent/3_run_interactive_session.sh` to start an interactive session with STEVE-1. This will not work in headless mode.
 
 ## Paper Citation
 

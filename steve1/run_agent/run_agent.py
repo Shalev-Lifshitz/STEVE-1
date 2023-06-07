@@ -1,4 +1,5 @@
 import os
+import sys
 
 import cv2
 import torch
@@ -54,16 +55,18 @@ def generate_text_prompt_videos(prompt_embeds, in_model, in_weights, cond_scale,
     for name, prompt_embed in prompt_embeds.items():
         print(f'Generating video for text prompt with name: {name}')
         save_video_filepath = os.path.join(save_dirpath, f'\'{name}\' - Text Prompt.mp4')
-        run_agent(prompt_embed, gameplay_length, save_video_filepath,
-                  in_model, in_weights, None, cond_scale)
+        if not os.path.exists(save_video_filepath):
+            run_agent(prompt_embed, gameplay_length, save_video_filepath,
+                      in_model, in_weights, None, cond_scale)
 
 
 def generate_visual_prompt_videos(prompt_embeds, in_model, in_weights, cond_scale, gameplay_length, save_dirpath):
     for name, prompt_embed in prompt_embeds.items():
         print(f'Generating video for visual prompt with name: {name}')
         save_video_filepath = os.path.join(save_dirpath, f'{name} - Visual Prompt.mp4')
-        run_agent(prompt_embed, gameplay_length, save_video_filepath,
-                  in_model, in_weights, None, cond_scale)
+        if not os.path.exists(save_video_filepath):
+            run_agent(prompt_embed, gameplay_length, save_video_filepath,
+                      in_model, in_weights, None, cond_scale)
 
 
 if __name__ == '__main__':
@@ -94,3 +97,4 @@ if __name__ == '__main__':
                                     args.gameplay_length, args.save_dirpath)
         generate_visual_prompt_videos(visual_prompt_embeds, args.in_model, args.in_weights, args.visual_cond_scale,
                                       args.gameplay_length, args.save_dirpath)
+        sys.exit(0)

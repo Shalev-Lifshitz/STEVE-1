@@ -45,6 +45,14 @@ We recommend running on linux using a conda environment, with python 3.10.
 5. Install additional requirements: `pip install gdown tqdm accelerate==0.18.0 wandb`
 6. Install `steve1` locally with: `pip install -e .`
 
+### Running on a headless server
+
+If you are running on a headless server, you need to install `xvfb` 
+and run each python script with `xvfb-run`. For example, `xvfb-run python script_name.py`. 
+
+Also, notice that we use the MineRL environment, not the MineDojo environment. Thus, setting 
+`MINEDOJO_HEADLESS=1` as mentioned in the 'MineDojo Installation' instructions will have no effect.
+
 ### Download the data and weights
 
 Run the following command to download the data and weights:

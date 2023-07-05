@@ -1,23 +1,4 @@
-/steve1/data/coverage/results/*
-/steve1/evaluation/results/*
-/steve1/evaluation/closest_episodes/*
-/steve1/evaluation/eval_episodes/*
-/steve1/evaluation/replays/*
-/steve1/evaluation/gameplays/*
-user_setup.sh
-/checkpoints/
-/trained_models/
-/outputs/
-/logs/
-/misc/
-/minedojo_code/outputs/
-/runs/
-/dataset/
-/other/
-/slurm_outputs/
-/run_logs/
 *__pycache__*
-/plots/
 *.model
 *.weights
 wandb/
@@ -187,5 +168,3 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
-checkpoint_test/
-data/

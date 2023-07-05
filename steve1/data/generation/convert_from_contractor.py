@@ -58,6 +58,7 @@ def episode_exists(ep_dirpath, existing_episodes):
     return False
 
 def main(args):
+    os.makedirs(args.output_dir, exist_ok=True)
     print(f'Loading MineCLIP...')
     mineclip = load(MINECLIP_CONFIG, device='cuda')
     print(f'Loading contractor data index {args.index}...')

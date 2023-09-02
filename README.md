@@ -7,7 +7,7 @@
 Shalev Lifshitz*, Keiran Paster*, Harris Chan†, Jimmy Ba, Sheila McIlraith
 
 [Project Page](https://sites.google.com/view/steve-1) | [ArXiv](https://arxiv.org/abs/2306.00937)
-| [PDF](https://arxiv.org/pdf/2306.00937.pdf) | Colab (coming soon...)
+| [PDF](https://arxiv.org/pdf/2306.00937.pdf)
 
 <img src="data/../images/STEVE-collage-background-blank.png" width="100%" />
 

@@ -561,13 +561,13 @@ if __name__ == '__main__':
 
     parser.add_argument('--T', type=int, default=300)
     parser.add_argument('--p_uncond', type=float, default=0.1)
-    parser.add_argument('--min_btwn_goals', type=int, default=30)
+    parser.add_argument('--min_btwn_goals', type=int, default=15)
     parser.add_argument('--max_btwn_goals', type=int, default=100)
 
     parser.add_argument('--batch_size', type=int, default=4)
     parser.add_argument('--gradient_accumulation_steps', type=int, default=1)
     parser.add_argument('--trunc_t', type=int, default=10)
-    parser.add_argument('--learning_rate', type=float, default=1e-6)
+    parser.add_argument('--learning_rate', type=float, default=4e-5)
     parser.add_argument('--n_frames', type=int, default=100_000_000)
     parser.add_argument('--warmup_frames', type=int, default=10_000_000)
     parser.add_argument('--weight_decay', type=float, default=0.039428)

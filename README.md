@@ -41,7 +41,7 @@ We recommend running on linux using a conda environment, with python 3.10.
    - See [MineDojo Installation](https://docs.minedojo.org/sections/getting_started/install.html) for more details such as setting the correct Java version
 3. Install MineRL: `pip install git+https://github.com/minerllabs/minerl@v1.0.1`
    - See [MineRL Installation](https://minerl.readthedocs.io/en/latest/tutorials/index.html) for more details on how to setup MineRL
-4. Install VPT requirements: `pip install gym==0.19 gym3 attrs opencv-python`.
+4. Install VPT requirements: `pip install gym==0.19 gym3 attrs opencv-python`
    - Note: At the time of writing, MineDojo and VPT require different versions of gym. Please use the gym version required by VPT (gym==0.19). If run each installation step in the order listed here, the correct gym version will be installed at the end of setup (since we install VPT requirements after MineDojo).
 6. Install additional requirements: `pip install gdown tqdm accelerate==0.18.0 wandb`
 7. Install `steve1` locally with: `pip install -e .`
